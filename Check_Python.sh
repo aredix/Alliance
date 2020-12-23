@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "Ce script a pour but d'être lancé en amont de tout dépannage afin de vérifier la présence de python sur le system."
-echo "Prenez en compte que ce script est adapté pour être lancé sur un machine UNIX et non Windows."
-echo "La compatibilité MacOS n'est pas assurée."
+echo "Ce script a pour but d'etre lance en amont de tout depannage afin de verifier la presence de python sur le systeme."
+echo "Prenez en compte que ce script est adapte pour etre lance sur un machine UNIX et non Windows."
+echo "La compatibilité MacOS n'est pas assuree."
 
 
