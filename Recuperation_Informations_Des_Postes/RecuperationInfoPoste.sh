@@ -36,3 +36,5 @@ i=1
     done
 
 echo "Le résultat de cet outil est disponible là où se trouve le programme dans le fichier resultat"
+
+# L'espace suivant est pour mettre en affichage WEB le résultat du fichier
