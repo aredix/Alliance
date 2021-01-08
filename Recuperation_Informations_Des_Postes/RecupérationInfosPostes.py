@@ -26,6 +26,6 @@ for i in cursor:
 os.system('cat resultat')
 
 ####################################
-###### ZONE CREATION PAGE WEB ######
+####### SCRIPT SANS PAGE WEB #######
 ####################################
 
