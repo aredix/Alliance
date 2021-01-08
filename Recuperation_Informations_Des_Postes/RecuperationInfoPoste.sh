@@ -1,6 +1,4 @@
-
 #!/bin/bash
-
 rm -rf resultat
 
 asterisk -rx 'sip show peers' | grep -v "192." | grep "OK (" > listEndpoints
@@ -38,3 +36,7 @@ i=1
 echo "Le résultat de cet outil est disponible là où se trouve le programme dans le fichier resultat"
 
 # L'espace suivant est pour mettre en affichage WEB le résultat du fichier
+
+#commande pour mettre en forme le texte avec l'API Xorcom :
+
+#curl -sF token=$token http://localhost/api/devices | node -e "console.log( JSON.stringify( JSON.parse(require('fs').readFileSync(0) ), 0, 1 ))"
