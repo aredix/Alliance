@@ -21,18 +21,18 @@ for i in cursor:
         print(extension)
         os.environ['extension'] = extension
 
-        os.system('asterisk -rx "sip show peer $extension" | grep Useragent | cut -d " " -f 8- > temp')
-        with open(filename) as f:
-                content = f.read().splitlines()
-        for useragent in content:
-                print(useragent)
-        
         os.system('asterisk -rx "sip show peer $extension" | grep "Reg. Contact" | cut -d "@" -f 2 | cut -d ":" -f 1 > temp')
         with open(filename) as f:
                 content = f.read().splitlines()
         for IPAutocom in content:
                 print(IPAutocom)
 
+        os.system('asterisk -rx "sip show peer $extension" | grep Useragent | cut -d " " -f 8- > temp')
+        with open(filename) as f:
+                content = f.read().splitlines()
+        for useragent in content:
+                print(useragent)
+        
         os.system('asterisk -rx "sip show peer 2001_Accueil_1" | grep "Status" | cut -d ":" -f 2 | sed "s/^.//" > temp')
         with open(filename) as f:
                 content = f.read().splitlines()
