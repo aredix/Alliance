@@ -38,7 +38,6 @@ for i in cursor:
                 content = f.read().splitlines()
         for status in content:
                 print(status)
-
         print("")
-        
+
 os.system('rm -rf temp')
