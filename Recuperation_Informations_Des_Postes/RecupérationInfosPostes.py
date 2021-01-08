@@ -33,10 +33,12 @@ for i in cursor:
         for useragent in content:
                 print(useragent)
         
-        os.system('asterisk -rx "sip show peer 2001_Accueil_1" | grep "Status" | cut -d ":" -f 2 | sed "s/^.//" > temp')
+        os.system('asterisk -rx "sip show peer $extension" | grep "Status" | cut -d ":" -f 2 | sed "s/^.//" > temp')
         with open(filename) as f:
                 content = f.read().splitlines()
         for status in content:
                 print(status)
 
         print("")
+        
+os.system('rm -rf temp')
