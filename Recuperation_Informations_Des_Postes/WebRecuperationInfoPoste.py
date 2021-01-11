@@ -35,7 +35,7 @@ for i in cursor:
         filename = "temp"
         extension = i[0]
         os.environ['extension'] = extension
-        os.system('asterisk -rx "sip show peer $extension" | grep "Reg. Contact" | cut -d "@" -f 2 | cut -d ":" -f 1 > temp')
+        os.system('asterisk -rx "sip show peer $extension" | grep "Reg. Contact" | cut -d ":" -f 3 | cut -d "@" -f 2 | cut -d ":" -f 1 | sed "s/^.// > temp')
         with open(filename) as f:
                 content = f.read().splitlines()
                 IPAutocom = content[0]
