@@ -46,8 +46,6 @@ for i in cursor:
                 content = f.read().splitlines()
                 status  = content[0]
 
-        #print("")
-
         with open('/usr/share/ombutel/www/script/result.html','ab') as valWEB:
                 valWEB.write("    <tr>")
                 valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
