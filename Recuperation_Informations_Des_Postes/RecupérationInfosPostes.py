@@ -1,3 +1,7 @@
+####################################
+####### SCRIPT SANS PAGE WEB #######
+####################################
+
 import sys
 import os
 import mysql.connector
@@ -24,8 +28,4 @@ for i in cursor:
         os.system('echo " " >> resultat')
         compteur = compteur + 1
 os.system('cat resultat')
-
-####################################
-####### SCRIPT SANS PAGE WEB #######
-####################################
 

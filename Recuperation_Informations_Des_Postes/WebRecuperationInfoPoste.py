@@ -1,3 +1,7 @@
+####################################
+####### SCRIPT AVEC PAGE WEB #######
+####################################
+
 import sys
 import os
 import mysql.connector
