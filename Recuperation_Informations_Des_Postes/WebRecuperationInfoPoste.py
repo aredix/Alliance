@@ -50,7 +50,7 @@ for i in cursor:
                 content = f.read().splitlines()
                 status  = content[0]
 
-         with open('/usr/share/ombutel/www/script/result.html','ab') as valWEB:
+        with open('/usr/share/ombutel/www/script/result.html','ab') as valWEB:
                 valWEB.write("    <tr>")
                 valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
                 valWEB.write(str(extension))
@@ -63,9 +63,14 @@ for i in cursor:
                 valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
                 valWEB.write(str(useragent))
                 valWEB.write("</td>")
-                valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
-                valWEB.write(str(status))
-                valWEB.write("</td>\n")
+                if str(status) == "UNKNOWN":
+                        valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px; color:red;\">")
+                        valWEB.write(str(status))
+                        valWEB.write("</td>\n")
+                else:
+                        valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px; color:green;\">")
+                        valWEB.write(str(status))
+                        valWEB.write("</td>\n")
                 valWEB.write("    </tr>\n")
         
 h = open('/usr/share/ombutel/www/script/result.html','ab')
