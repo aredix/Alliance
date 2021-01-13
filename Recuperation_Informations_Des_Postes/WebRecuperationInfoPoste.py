@@ -50,14 +50,16 @@ for i in cursor:
                 content = f.read().splitlines()
                 status  = content[0]
 
-        with open('/usr/share/ombutel/www/script/result.html','ab') as valWEB:
+         with open('/usr/share/ombutel/www/script/result.html','ab') as valWEB:
                 valWEB.write("    <tr>")
                 valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
                 valWEB.write(str(extension))
                 valWEB.write("</td>")
-                valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
+                valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\"><a href=\"http://")
                 valWEB.write(str(IPAutocom))
-                valWEB.write("</td>")
+                valWEB.write("\" target=\"_blank\">")
+                valWEB.write(str(IPAutocom))
+                valWEB.write("</a></td>")
                 valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
                 valWEB.write(str(useragent))
                 valWEB.write("</td>")
