@@ -16,3 +16,5 @@ UPDATE 1.5 : Correction d'un bug ne laissant pas la case (Adrsse IP) vide si le 
 UPDATE 1.5.2 : Ajout d'un style CSS sur le tableau afin de faciliter sa lecture et le rendre moins aggressif.
 
 UPDATE 1.6 : Les adresses IP sont maintenant des liens cliquables pour ouvrir directement les pages WEB des postes associés.
+
+UPDATE 1.7 : Ajout de la colorisation en fonction de l'état du poste (OK ou UNKNOWN). C'est quand même mieux avec de la couleur ...
