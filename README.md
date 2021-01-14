@@ -23,3 +23,4 @@ UPDATE 1.7.1 : Ajour d'un message pour indiquer où se trouve le résultat du sc
 
 UPDATE 1.7.2 : Suppression des messages d'erreur si le dossier 'script' existe déjà
 
+UPDATE 1.7.3 : Suivis de version
