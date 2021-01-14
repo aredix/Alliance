@@ -18,3 +18,5 @@ UPDATE 1.5.2 : Ajout d'un style CSS sur le tableau afin de faciliter sa lecture 
 UPDATE 1.6 : Les adresses IP sont maintenant des liens cliquables pour ouvrir directement les pages WEB des postes associés.
 
 UPDATE 1.7 : Ajout de la colorisation en fonction de l'état du poste (OK ou UNKNOWN). C'est quand même mieux avec de la couleur ...
+
+UPDATE 1.7.1 : Ajour d'un message pour indiquer où se trouve le résultat du script.
