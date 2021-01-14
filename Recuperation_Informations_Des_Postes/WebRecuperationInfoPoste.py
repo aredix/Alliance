@@ -82,3 +82,5 @@ endWEB ="""
 h.write(endWEB)
 h.close()
 os.system('rm -rf temp')
+
+print("Le résultat du script est accessible via http://localhost/script/result.html")
