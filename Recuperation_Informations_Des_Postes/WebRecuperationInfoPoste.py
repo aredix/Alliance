@@ -1,5 +1,9 @@
 ####################################
-####### SCRIPT AVEC PAGE WEB #######
+##      SCRIPT AVEC PAGE WEB      ##
+####################################
+##  Author : David DESPLANQUE     ##
+##  Version : 1.7.3               ##
+##  Made for : Alliance Telecom   ##
 ####################################
 
 import sys
