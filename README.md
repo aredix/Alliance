@@ -19,8 +19,8 @@ UPDATE 1.6 : Les adresses IP sont maintenant des liens cliquables pour ouvrir di
 
 UPDATE 1.7 : Ajout de la colorisation en fonction de l'état du poste (OK ou UNKNOWN). C'est quand même mieux avec de la couleur ...
 
-UPDATE 1.7.1 : Ajour d'un message pour indiquer où se trouve le résultat du script.
+UPDATE 1.7.1 : Ajout d'un message pour indiquer où se trouve le résultat du script.
 
 UPDATE 1.7.2 : Suppression des messages d'erreur si le dossier 'script' existe déjà
 
-UPDATE 1.7.3 : Suivis de version
+UPDATE 1.7.3 : Ajout du suivis de version
