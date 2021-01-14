@@ -13,7 +13,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 mycursor.execute("select user from ombu_sip_devices")
 cursor = mycursor
-os.system('mkdir /usr/share/ombutel/www/script')
+os.system('mkdir /usr/share/ombutel/www/script 2> /dev/null')
 h = open('/usr/share/ombutel/www/script/result.html','wb')
 
 initWEB = """<html>
@@ -83,4 +83,4 @@ h.write(endWEB)
 h.close()
 os.system('rm -rf temp')
 
-print("Le résultat du script est accessible via http://localhost/script/result.html")
+print("Le resultat du script est accessible via http://localhost/script/result.html")
