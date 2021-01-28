@@ -21,15 +21,15 @@ os.system('mkdir /usr/share/ombutel/www/script 2> /dev/null')
 h = open('/usr/share/ombutel/www/script/result.html','wb')
 
 initWEB = """<html>
-        <head></head>
-        <body><p><h1>Resultat du script :</h1></p></body>
-        <table style="border-collapse: collapse;">
-        <tr>
-                <td style="border: 2px solid black; padding: 10px;">Extension</td>
-                <td style="border: 2px solid black; padding: 10px;">Adresse IP (derniere connue)</td>
-                <td style="border: 2px solid black; padding: 10px;">Model de poste</td>
-                <td style="border: 2px solid black; padding: 10px;">Status</td>
-        </tr>"""
+<head></head>
+<body><p><h1>Resultat du script :</h1></p></body>
+<table style="border-collapse: collapse;">
+<tr>
+        <td style="border: 2px solid black; padding: 10px;">Extension</td>
+        <td style="border: 2px solid black; padding: 10px;">Adresse IP (derniere connue)</td>
+        <td style="border: 2px solid black; padding: 10px;">Model de poste</td>
+        <td style="border: 2px solid black; padding: 10px;">Status</td>
+</tr>"""
 
 h.write(initWEB)
 h.close()
