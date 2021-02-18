@@ -2,7 +2,7 @@
 ##      SCRIPT AVEC PAGE WEB      ##
 ####################################
 ##  Author : David DESPLANQUE     ##
-##  Version : 1.7.3               ##
+##  Version : 1.7.4               ##
 ##  Made for : Alliance Telecom   ##
 ####################################
 
@@ -17,8 +17,8 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 mycursor.execute("select user from ombu_sip_devices")
 cursor = mycursor
-os.system('mkdir /usr/share/ombutel/www/script 2> /dev/null')
-h = open('/usr/share/ombutel/www/script/result.html','wb')
+os.system('mkdir /usr/share/ombutel/www/alliance 2> /dev/null')
+h = open('/usr/share/ombutel/www/alliance/result.html','wb')
 
 initWEB = """<html>
 <head></head>
@@ -54,7 +54,7 @@ for i in cursor:
                 content = f.read().splitlines()
                 status  = content[0]
 
-        with open('/usr/share/ombutel/www/script/result.html','ab') as valWEB:
+        with open('/usr/share/ombutel/www/alliance/result.html','ab') as valWEB:
                 valWEB.write("    <tr>")
                 valWEB.write("\n\t\t<td style=\"border: 2px solid black; padding: 10px;\">")
                 valWEB.write(str(extension))
@@ -77,7 +77,7 @@ for i in cursor:
                         valWEB.write("</td>\n")
                 valWEB.write("    </tr>\n")
         
-h = open('/usr/share/ombutel/www/script/result.html','ab')
+h = open('/usr/share/ombutel/www/alliance/result.html','ab')
 
 endWEB ="""       
 </table>
@@ -87,4 +87,4 @@ h.write(endWEB)
 h.close()
 os.system('rm -rf temp')
 
-print("Le resultat du script est accessible via http://localhost/script/result.html")
+print("Le resultat du script est accessible via http://localhost/alliance/result.html")
